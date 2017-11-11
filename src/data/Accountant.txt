@@ -1,0 +1,5 @@
+Employee id  : 50100300
+Employee Name: Keiko
+Department ID: 701
+Branch Id    : 100
+Log in time  : 2017/11/08 20:45:20

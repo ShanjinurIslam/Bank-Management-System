@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Accountant">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="800.0">
+        <items>
+            <Button fx:id="create_acc" mnemonicParsing="false" onAction="#setCreate_acc" text="New Account" />
+            <Button fx:id="check_bal" mnemonicParsing="false" onAction="#setCheck_bal" text="Check Balance" />
+            <Button fx:id="transfer_history" mnemonicParsing="false" text="Transfer History" />
+            <Button fx:id="get_stat" mnemonicParsing="false" onAction="#setGet_stat" text="Get Statement" />
+            <Button fx:id="delete_acc" mnemonicParsing="false" onAction="#setDelete_acc" text="Delete Account" />
+            <Button fx:id="log_out" mnemonicParsing="false" onAction="#LogOut" text="Log Out" />
+        </items>
+      </ToolBar>
+      <Label layoutX="36.0" layoutY="65.0" prefHeight="43.0" prefWidth="112.0" text="Activity Log" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="37.0" layoutY="125.0" prefHeight="426.0" prefWidth="379.0" promptText="Logs of the session">
+         <font>
+            <Font name="Monospaced Regular" size="19.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="employee_info" editable="false" layoutX="532.0" layoutY="125.0" prefHeight="250.0" prefWidth="200.0" />
+      <Label layoutX="532.0" layoutY="72.0" prefHeight="43.0" prefWidth="144.0" text="Employee Info" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

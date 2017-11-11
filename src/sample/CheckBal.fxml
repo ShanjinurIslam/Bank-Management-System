@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CheckBal">
+   <children>
+      <TextField fx:id="balance" disable="true" layoutX="118.0" layoutY="397.0" promptText="User Balance" />
+      <Label layoutX="64.0" layoutY="182.0" text="Enter Account No" />
+      <TextField fx:id="acc_id" layoutX="202.0" layoutY="177.0" promptText="Account Number" />
+      <Text disable="true" layoutX="141.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Balance is:" />
+      <Button fx:id="check" layoutX="172.0" layoutY="273.0" mnemonicParsing="false" onAction="#setCheck" text="Check" />
+      <TextField fx:id="branch_name" layoutX="202.0" layoutY="222.0" promptText="Name of Branch" />
+      <Label layoutX="64.0" layoutY="227.0" text="Enter Branch Name" />
+   </children>
+</AnchorPane>

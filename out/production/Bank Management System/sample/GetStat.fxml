@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GetStat">
+   <children>
+      <Label layoutX="27.0" layoutY="42.0" text="Account No" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="acc_id" layoutX="127.0" layoutY="37.0" prefHeight="27.0" prefWidth="509.0" promptText="Type ACC Number" />
+      <Button fx:id="getStat" layoutX="651.0" layoutY="37.0" mnemonicParsing="false" onAction="#onGetStatClick" prefHeight="27.0" prefWidth="108.0" text="Get Statement" />
+      <Button fx:id="printToPDF" layoutX="675.0" layoutY="505.0" mnemonicParsing="false" onAction="#setPrintToPDF" text="Print to PDF" />
+      <TableView fx:id="stat_table" layoutX="28.0" layoutY="129.0" prefHeight="342.0" prefWidth="737.0" style="-fx-background-color: white;">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="304.0" layoutY="97.0" text="Customer Account Statement" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

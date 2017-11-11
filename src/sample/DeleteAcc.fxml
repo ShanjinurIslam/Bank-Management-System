@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteAcc">
+   <children>
+      <Label layoutX="56.0" layoutY="109.0" text="Account ID" textFill="WHITE" />
+      <TextField fx:id="acc_id" layoutX="144.0" layoutY="104.0" prefHeight="27.0" prefWidth="223.0" promptText="Type Account Number" />
+      <Button fx:id="delete_account" layoutX="144.0" layoutY="189.0" mnemonicParsing="false" onAction="#setDelete_account" text="Delete Account" />
+   </children>
+</AnchorPane>
