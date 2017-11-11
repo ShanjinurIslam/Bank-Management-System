@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GetStat">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets=" @../CSS/Style.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GetStat">
    <children>
       <Label layoutX="27.0" layoutY="42.0" text="Account No" textFill="WHITE">
          <font>

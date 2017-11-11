@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" styleClass="background" stylesheets="@../CSS/Style.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.new_Client">
+   <children>
+      <VBox layoutX="51.0" layoutY="79.0" prefHeight="292.0" prefWidth="196.0" spacing="30.0">
+         <children>
+            <Label text="Client Name" />
+            <Label text="Client Address" />
+            <Label text="Client Email" />
+            <Label text="Client Phone" />
+            <Label text="Branch Name" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="205.0" layoutY="102.0" prefHeight="218.0" prefWidth="299.0" spacing="20.0">
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <TextField fx:id="client_name" promptText="Full Name" />
+            <TextField fx:id="client_address" promptText="Permanet Address Recommanded" />
+            <TextField fx:id="client_email" promptText="Optional" />
+            <TextField fx:id="client_phone" promptText="Mandatory" />
+            <TextField fx:id="branch_name" promptText="Mandatory" />
+         </children>
+      </VBox>
+      <Label layoutX="247.0" layoutY="36.0" text="Add New Client" />
+      <Button layoutX="235.0" layoutY="371.0" mnemonicParsing="false" text="Create Client" />
+   </children>
+</AnchorPane>

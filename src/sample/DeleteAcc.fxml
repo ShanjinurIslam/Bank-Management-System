@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteAcc">
+<AnchorPane prefHeight="600.0" prefWidth="400.0" styleClass="background" stylesheets="@../CSS/Style.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteAcc">
    <children>
       <Label layoutX="56.0" layoutY="109.0" text="Account ID" textFill="WHITE" />
       <TextField fx:id="acc_id" layoutX="144.0" layoutY="104.0" prefHeight="27.0" prefWidth="223.0" promptText="Type Account Number" />

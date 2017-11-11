@@ -54,7 +54,7 @@
                   </PasswordField>
                </children>
             </HBox>
-            <Button fx:id="signIn" mnemonicParsing="false" onAction="#onButtonClick" text="Sign in" translateX="100.0">
+            <Button fx:id="signIn" mnemonicParsing="false" onAction="#onButtonClick"  text="Sign in" translateX="100.0">
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
