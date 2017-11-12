@@ -6,8 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: White;" stylesheets="@../CSS/Style.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateAccount">
+<AnchorPane prefHeight="600.0" prefWidth="400.0" styleClass="background" stylesheets="@../CSS/Style.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateAccount">
    <children>
       <Button layoutX="141.0" layoutY="198.0" mnemonicParsing="false" style="-fx-background-radius: 5,5,4;" stylesheets="@../CSS/Style.CSS" text="New Client" />
       <Button layoutX="132.0" layoutY="300.0" mnemonicParsing="false" stylesheets="@../CSS/Style.CSS" text="Existing Client" />

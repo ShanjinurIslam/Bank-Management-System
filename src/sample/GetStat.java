@@ -62,7 +62,7 @@ public class GetStat {
         PDDocument document = new PDDocument() ;
         PDPage page = new PDPage();
         document.addPage( page );
-        PDFont font = PDType1Font.COURIER ;
+        PDFont font = PDType1Font.COURIER;
         try{
             PDPageContentStream contentStream = new PDPageContentStream(document, page);
             int fontsize = 8 ;
@@ -75,13 +75,13 @@ public class GetStat {
             contentStream.moveTextPositionByAmount(0, -leading);
             for (Data d:trans
                  ) {
-                String transaction = d.a + "        " + d.b +"          " + d.c +"          " + d.d ;
+                String transaction = d.a + "        " + d.b +"          " + d.c +"          " + d.d ;
                 contentStream.showText(transaction);
                 contentStream.moveTextPositionByAmount(0, -leading);
             }
             contentStream.endText();
             contentStream.close();
-            String filename = "src/sample/data"+"Statement_"+account+".pdf" ;
+            String filename = "src/data/"+"Statement_"+account+".pdf" ;
             document.save(filename);
             document.close();
             Desktop.getDesktop().open(new File(filename)) ;

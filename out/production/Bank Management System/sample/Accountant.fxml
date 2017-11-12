@@ -8,9 +8,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: Grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Accountant">
+<AnchorPane prefHeight="600.0" prefWidth="830.0" styleClass="background" stylesheets="@../CSS/Style.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Accountant">
    <children>
-      <ToolBar prefHeight="40.0" prefWidth="800.0">
+      <ToolBar prefHeight="41.0" prefWidth="838.0">
         <items>
             <Button fx:id="create_acc" mnemonicParsing="false" onAction="#setCreate_acc" text="New Account" />
             <Button fx:id="check_bal" mnemonicParsing="false" onAction="#setCheck_bal" text="Check Balance" />
