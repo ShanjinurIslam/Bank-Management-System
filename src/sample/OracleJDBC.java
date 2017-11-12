@@ -69,6 +69,8 @@ class OracleJDBC {
             else{
                 balance = r.getString("ACC_BALANCE") ;
             }
+            stmt.close();
+            c.close();
         }catch (Exception e){
             System.out.println(e);
         }
@@ -124,6 +126,26 @@ class OracleJDBC {
             c.close();
         }catch (Exception e){
             System.out.println(e);
+        }
+    }
+
+    public void newClient(String name,String address,String email,String phone,String branch){
+        try{
+            String r = new String() ;
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            Connection c=DriverManager.getConnection(
+                    "jdbc:oracle:thin:@localhost:1521:xe","Bank","bank");
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery("select MAX(CLIENT_ID)+1 from CLIENTS");
+            while (rs.next()) {
+                r = rs.getString(1);
+            }
+            String insert_sql = "INSERT INTO CLIENTS VALUES("+r+",(SELECT BRANCH_ID FROM BRANCH WHERE BRANCH_NAME='"+branch +"'),'"+name+"','"+address+"','"+((email.equals(""))?"NULL":email)+"','"+phone+"')";
+            stmt.execute(insert_sql) ;
+            stmt.close();
+            c.close();
+        }catch(Exception e){
+                System.out.println(e);
         }
     }
 }

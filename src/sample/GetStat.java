@@ -76,14 +76,14 @@ public class GetStat {
             for (Data d:trans
                  ) {
                 String transaction = d.a + "        " + d.b +"          " + d.c +"          " + d.d ;
-                contentStream.showText(transaction);
-                contentStream.moveTextPositionByAmount(0, -leading);
+                contentStream.showText(transaction) ;
+                contentStream.moveTextPositionByAmount(0, -leading) ;
             }
-            contentStream.endText();
-            contentStream.close();
+            contentStream.endText() ;
+            contentStream.close() ;
             String filename = "src/data/"+"Statement_"+account+".pdf" ;
-            document.save(filename);
-            document.close();
+            document.save(filename) ;
+            document.close() ;
             Desktop.getDesktop().open(new File(filename)) ;
         }catch (Exception e){
             System.out.println(e);

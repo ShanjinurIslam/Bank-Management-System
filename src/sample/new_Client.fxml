@@ -8,7 +8,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="450.0" prefWidth="600.0" styleClass="background" stylesheets="@../CSS/Style.CSS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.new_Client">
    <children>
       <VBox layoutX="51.0" layoutY="79.0" prefHeight="292.0" prefWidth="196.0" spacing="30.0">
@@ -42,6 +41,6 @@
          </children>
       </VBox>
       <Label layoutX="247.0" layoutY="36.0" text="Add New Client" />
-      <Button layoutX="235.0" layoutY="371.0" mnemonicParsing="false" text="Create Client" />
+      <Button layoutX="235.0" layoutY="371.0" mnemonicParsing="false" onAction="#createClient" text="Create Client" />
    </children>
 </AnchorPane>

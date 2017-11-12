@@ -1,5 +1,5 @@
-Employee id  : 50100300
-Employee Name: Keiko
+Employee id  : 50110301
+Employee Name: Igor
 Department ID: 701
-Branch Id    : 100
-Log in time  : 2017/11/12 10:22:47
+Branch Id    : 110
+Log in time  : 2017/11/12 11:22:30
